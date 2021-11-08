@@ -6,3 +6,33 @@ body{
   font-family: "MS Pゴシック" ;
 }
 
+video{
+  visibility: visible;
+  width: 270px;
+	height: 270px;
+	object-fit: cover;
+}
+
+.cameras{
+  display        : flex;                 /* FlexBox定義         */
+  flex-wrap      : wrap;   
+}
+.wrapper {
+  position: relative;
+  display:inline-block;
+}
+
+.canvas {
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  pointer-events: none;
+  transform: scaleX(-1);
+}
+
+#camera{
+  transform: scaleX(-1);
+}
+
