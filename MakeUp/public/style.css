@@ -1,0 +1,60 @@
+.container{
+    position: relative;
+    display: inline-block;
+}
+
+.input_video{
+    width: 1920px;
+    height: 1080px;
+    transform: scaleX(-1);
+}
+
+.output_canvas{
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: scaleX(-1);
+}
+
+#threejs_canvas{
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#weather{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    visibility: hidden;
+}
+
+#schedule{
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    visibility: hidden;
+
+}
+
+#instruct{
+    position: absolute;
+    top: 800px;
+    left: 600px;
+    visibility:hidden;
+}
+
+.debug{
+    visibility:visible;
+}
+
+button{
+    background-color: aqua;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+}

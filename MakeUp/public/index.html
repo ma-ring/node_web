@@ -7,15 +7,43 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
 
-  <script type="module" src="script.js" ></script>
   <link rel = "stylesheet" href="style.css">
+  <!--loda libs-->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.116.1"></script>
+
+  <!--load my own script-->
+  <script type="text/javascript" src="script/definition.js" ></script>
+  <script type="text/javascript" src="script/face.js" ></script>
+  <script type="text/javascript" src="script/index.js"></script>
+  <script type="text/javascript" src="script/triangulation.js"></script>
+  <script type="text/javascript" src="script/uv_coords.js"></script>
+
+
 </head>
 
 <body>
-  <div class="container">
-    <video class="input_video"></video>
-    <canvas class="output_canvas" width="1280px" height="720px"></canvas>
-  </div>
 
+  <div class="container">
+    <video  class="input_video" height="1080" width="1920"></video>
+    <canvas class = "output_canvas" height="1080" width="1920"></canvas>
+    <canvas id = "threejs_canvas"></canvas>
+    <img id = "weather" src="data/weather.png" width="400">
+    <img id = "schedule" src="data/schedule.png" width="400">
+
+    <img id = "instruct" src="" width="800">
+    
+    </div>
+    
+  </div>
+  <button onclick="startMorningMode()">Morning</button>  
+  <button onclick="startEveningMode()">Evening</button>　
+  <button onclick="changeMask()">Change Mask</button>
+  <input type="checkbox" checked="checked" id = "asMirror" onChange="onChangeUseMirror()">Use as mirror
+  <br>
+  <div class = "debug">
+    <canvas id = "texture" width="512" height="512" ></canvas>
+  </div>
+  
+  
 </body>
 </html>

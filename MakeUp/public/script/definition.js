@@ -1,0 +1,36 @@
+
+//MODE
+let DS_TURN_OFF = 0;
+let DS_MORNING  = 1;
+let DS_EVENING  = 2;
+
+//MODE
+let FC_NONE = 0;
+let FC_SCAN = 1;
+let FC_MAKE = 2;
+
+
+//MORNING STATUS
+let MNG_STATE_NUM = 7;
+let MNG_STATE_WAKEUP   = 0;
+let MNG_STATE_SCAN     = 1;
+let MNG_STATE_WEATHER  = 2;
+let MNG_STATE_SCHEDULE = 3;
+let MNG_STATE_RECOMMEND = 4;
+let MNG_STATE_MAKEUP = 5;
+let MNG_STATE_GOODBYE = 6;
+
+
+//EVENING STATUS
+let ENG_STATE_NUM = 4;
+let ENG_STATE_WELCOMEHOME = 0;
+let ENG_STATE_SCAN     = 1;
+let ENG_STATE_RESULT   = 2;
+let ENG_STATE_GOODBYE = 3;
+
+//KEYCODE
+let KEY_OFF = 'o';
+let KEY_MORNING = 'm';
+let KEY_EVENING = 'e';
+let KEY_CHANGE_STATE = 'a';
+let KEY_CHANGE_MASK = "s";
